@@ -24,7 +24,10 @@
       "Bash(grep \"\\\\.js$\")",
       "Bash(grep \"^\\\\?\\\\?.*src/.*\\\\.js$\")",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Read(//c/Users/thinkpad/Desktop/**)",
+      "Bash(git -C \"E:/Internship Projects/RuyiHermesAgent\" remote -v)"
     ]
   }
 }
