@@ -719,7 +719,7 @@ app.setName(APP_NAME)
 // need this, so gate it on Windows. (Fixes: desktop approval/turn notifications
 // never firing on Windows.)
 if (IS_WINDOWS) {
-  app.setAppUserModelId('com.enehermes.app')
+  app.setAppUserModelId('com.enehermester.app')
 }
 
 // Seed the native About panel with the live Hermes version. This is refreshed

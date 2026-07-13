@@ -10,7 +10,7 @@ set HERMES_HOME=%~dp0workspace
 
 :: 检查依赖
 if not exist "%~dp0node_modules" (
-    start "EneHermes 安装提示" cmd /c "echo 请先运行: cd %~dp0 ^&^& npm install && pause"
+    start "EneHermester 安装提示" cmd /c "echo 请先运行: cd %~dp0 ^&^& npm install && pause"
     exit /b 1
 )
 
