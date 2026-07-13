@@ -483,7 +483,7 @@
           color-mix(in srgb, var(--ui-chat-surface-background) 70%, transparent),
           color-mix(in srgb, var(--ui-chat-surface-background) 70%, transparent)
         ),
-      url('/background1.jpg') center / cover no-repeat fixed;
+      url('/background01.jpg') center / cover no-repeat fixed;
   }
 
   .bg-\(--ui-editor-surface-background\) {
@@ -492,7 +492,7 @@
           color-mix(in srgb, var(--ui-editor-surface-background) 70%, transparent),
           color-mix(in srgb, var(--ui-editor-surface-background) 70%, transparent)
         ),
-      url('/background1.jpg') center / cover no-repeat fixed;
+      url('/background01.jpg') center / cover no-repeat fixed;
   }
 
   button,
