@@ -469,18 +469,30 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* Custom background image — semi-transparent overlay behind all content */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    background-image: url('/background1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.3;
-    pointer-events: none;
+  /*
+   * Custom background image — layered UNDER the theme colour at ~30% visibility.
+   *
+   * CSS background layers stack bottom-to-top.  Layer 1 (top) is a 70%-opaque
+   * wash of the current theme's surface colour.  Layer 2 is the image.  The
+   * theme colour is still the dominant tone, but the image texture shows through
+   * at ~30 % strength in every light/dark mode.
+   */
+  .bg-\(--ui-chat-surface-background\) {
+    background:
+      linear-gradient(
+          color-mix(in srgb, var(--ui-chat-surface-background) 70%, transparent),
+          color-mix(in srgb, var(--ui-chat-surface-background) 70%, transparent)
+        ),
+      url('/background1.jpg') center / cover no-repeat fixed;
+  }
+
+  .bg-\(--ui-editor-surface-background\) {
+    background:
+      linear-gradient(
+          color-mix(in srgb, var(--ui-editor-surface-background) 70%, transparent),
+          color-mix(in srgb, var(--ui-editor-surface-background) 70%, transparent)
+        ),
+      url('/background1.jpg') center / cover no-repeat fixed;
   }
 
   button,
