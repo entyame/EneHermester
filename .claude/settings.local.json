@@ -27,7 +27,8 @@
       "Bash(git commit *)",
       "Bash(git push *)",
       "Read(//c/Users/thinkpad/Desktop/**)",
-      "Bash(git -C \"E:/Internship Projects/RuyiHermesAgent\" remote -v)"
+      "Bash(git -C \"E:/Internship Projects/RuyiHermesAgent\" remote -v)",
+      "Bash(npm run *)"
     ]
   }
 }

@@ -469,6 +469,20 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  /* Custom background image — semi-transparent overlay behind all content */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url('/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
   button,
   textarea {
     font: inherit;
