@@ -71,6 +71,13 @@ apps/desktop/dist/
 apps/desktop/release/
 apps/desktop/*.tsbuildinfo
 
+# TypeScript 编译产物（源码 .tsx/.ts 的同名 .js）
+apps/desktop/src/**/*.js
+apps/shared/src/**/*.js
+
+# 图标备份文件
+*.bak
+
 # Web UI assets — synced from @nous-research/ui at build time via
 # `npm run sync-assets` (see web/package.json).
 web/public/fonts/

@@ -1,7 +1,30 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm ci *)"
+      "Bash(npm ci *)",
+      "Bash('E:/Internship Projects/RuyiHermesAgent/node_modules/electron/dist/electron.exe' -e ' *)",
+      "Bash(\"E:/Internship Projects/RuyiHermesAgent/node_modules/electron/dist/electron.exe\" .)",
+      "Bash(node -e \"const p=require\\('E:/Internship Projects/RuyiHermesAgent/node_modules/electron/package.json'\\); console.log\\('main:', p.main\\); console.log\\('exports:', JSON.stringify\\(p.exports, null, 2\\)\\); console.log\\('type:', p.type\\)\")",
+      "Bash(cat)",
+      "Bash(node -e ' *)",
+      "Read(//e/Temp/test-electron/**)",
+      "Bash(set)",
+      "Bash(env)",
+      "Read(//c/Users/thinkpad/**)",
+      "Bash(npm config *)",
+      "Bash(env -u ELECTRON_RUN_AS_NODE 'E:/Internship Projects/RuyiHermesAgent/node_modules/electron/dist/electron.exe' .)",
+      "Bash(env -u ELECTRON_RUN_AS_NODE 'HERMES_DESKTOP_HERMES_ROOT=E:/Internship Projects/RuyiHermesAgent' 'HERMES_HOME=E:/Internship Projects/RuyiHermesAgent/workspace' npm run dev)",
+      "Bash(echo \"DEV PID: $!\")",
+      "Bash(netstat -ano)",
+      "Bash(convert --version)",
+      "Bash(.venv/Scripts/python -c \"from PIL import Image; print\\('Pillow available'\\)\")",
+      "Bash(.venv/Scripts/python)",
+      "Bash(powershell -ExecutionPolicy Bypass -Command ' *)",
+      "Bash(git remote *)",
+      "Bash(grep \"\\\\.js$\")",
+      "Bash(grep \"^\\\\?\\\\?.*src/.*\\\\.js$\")",
+      "Bash(git add *)",
+      "Bash(git commit *)"
     ]
   }
 }
